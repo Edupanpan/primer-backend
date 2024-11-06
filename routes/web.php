@@ -7,3 +7,4 @@ Route::get('/', function () {
 });
 
 Route::get('/tasks', [TaskController::class, 'getAll']);
+Route::post('/tasks', [TaskController::class, 'createTask']);
