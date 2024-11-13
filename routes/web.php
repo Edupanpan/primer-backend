@@ -6,5 +6,3 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/tasks', [TaskController::class, 'getAll']);
-Route::post('/tasks', [TaskController::class, 'createTask']);
